@@ -48,7 +48,7 @@
       <h1><a href="www.rstiwari.com">Ravi Shekhar Tiwari </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>A.I Engineer</span> from India </h2>
+      <h2>I'm a passionate <span>AI Engineer</span> from India </h2>
 
     
 
@@ -74,7 +74,7 @@
         <a href="http://www.linkedin.com/in/ravishekhartiwari" class="linkedin"><i class="bi bi-linkedin"></i></a>
         <a href="https://twitter.com/tiwari11rst" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="https://github.com/happyman11" class="facebook"><i class="bi bi-github"></i></a>
-        <a href="mailto:contact@rstiwari.com&bcc=tiwari11.rst@gmail.com,tiwari14.rst@gmail.com&subject=From portfolio.rstiwari.com"><i class="bi bi-envelope-plus-fill"></i></a>
+        <!-- <a href="mailto:contact@rstiwari.com&bcc=tiwari11.rst@gmail.com,tiwari14.rst@gmail.com&subject=From portfolio.rstiwari.com"><i class="bi bi-envelope-plus-fill"></i></a> -->
       </div>
 
     </div>
@@ -101,9 +101,9 @@
         </a>
         </div>
       
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left"  >
           <h3>Associate Professor, School of Computing, SRMIST</h3>
-          <p class="fst-italic text-wrap">
+          <p class="fst-italic text-wrap text_formatted">
             As we say “Car is useless if it doesn’t have a good engine” similarly I is useless without proper guidance and motivation. I will like to thank  my  Idol “Dr. P. Supraja” -guided me throughout the journey, from the bottom of my
 		        heart. As a Guru, she has lighted the best available path for me, motivated and supported me
 	                     whenever I encountered failure/roadblock  - without her support and motivation this
@@ -127,7 +127,7 @@
               </ul>
             </div>
           </div>
-          <p class="fst-italic text-wrap">
+          <p class="fst-italic text_formatted">
             Whatever I may become its credit will always go to my idol i.e. Dr. P. Supraja and one of my sister. She supported me in each and every phase of my life.
           </p>
         </div>
@@ -191,15 +191,15 @@
 
       <div class="row">
        
-        <div class="col-lg-4" data-aos="fade-right">
+        <div class="col-lg-4" data-aos="fade-right" >
           <a href="https://www.srmist.edu.in/department-of-networking-and-communications/faculty/a-helen-victoria">
-          <img src="./assets/img/img/Helen_mam (1).jpeg" style="z-index: 14"  width="100%" class="img-fluid" alt="Dr. Helen Victoria image">
+          <img src="./assets/img/img/Helen_mam(2).jpeg"   class="img-fluid imghelenmam" alt="Dr. Helen Victoria image">
         </a>
         </div>
       
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Assistant Professor, School of Computing, SRMIST</h3>
-          <p class="fst-italic text-wrap">
+          <p class="fst-italic text_formatted">
            
               Technology is just a tool. In terms of getting the kids to work together and motivating them, the teacher is the most important.
               That teacher makes the difference, not the classroom. Thou who remembers their education thou remembers their teacher.
@@ -222,7 +222,7 @@
               </ul>
             </div>
           </div>
-          <p class="fst-italic text-wrap">
+          <p class="fst-italic text_formatted">
             Education is the key to success in life, and teachers make a lasting impact in the lives of their students.               
         </p>
         </div>
@@ -295,7 +295,7 @@
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>AI Engineer, ML Developer &amp;  Data Scientist</h3>
-          <p class="fst-italic">
+          <p class="fst-italic text_formatted">
             Life is like a roller coster sometime we go upward sometime we go downward, but we have to maintain our momentum to achieve what we want....
             Stay Focus focus and choice your goals
           </p>
@@ -318,7 +318,7 @@
               </ul>
             </div>
           </div>
-          <p>
+          <p class="text_formatted">
             I just want you to know that if you are out there and you are being really hard on yourself right now for something that has happened ... it's normal. That is what is going to happen to you in life. No one gets through unscathed. We are all going to have a few scratches on us. Please be kind to yourselves and stand up for yourself, please.
           </p>
         </div>
@@ -1191,7 +1191,7 @@
             <h5>2015-2019</h5>
             <p><em>SRM University, Chennai, Tamil Nadu, India</em></p>
             <p><strong>Percentage:</strong><span>81.76​</span> </p>
-            <p>I pursued my graduation (B.Tech) from SRM University, Kattankulathur, Chennai, India in Information and Technology with "First Class with Distinction". In this curriculum, I was exposed to many sectors such as Networking, Web technologies, Internet of things, Integrated Programming Languages, Database, Algorithms, Cryptography, Fundamental of Virtualization, Operating System. There I worked on a project , research papers, and patents.</p>
+            <p class="fst-italic text_formatted">I pursued my graduation (B.Tech) from SRM University, Kattankulathur, Chennai, India in Information and Technology with "First Class with Distinction". In this curriculum, I was exposed to many sectors such as Networking, Web technologies, Internet of things, Integrated Programming Languages, Database, Algorithms, Cryptography, Fundamental of Virtualization, Operating System. There I worked on a project , research papers, and patents.</p>
           </div>
         </div>
         </div>
@@ -1798,7 +1798,7 @@
           <div class="error-message" id="notok" style="display:none;"></div>
           <div  class="sent-message" id="ok" style="display:none;"></div>
         </div>
-        <div class="text-center"><button  type="button" onclick="SendMail()">Send Message</button></div>
+        <div class="text-center"><button id="form-button" type="button" onclick="SendMail()">Send Message</button></div>
       </form>
 
     </div>
@@ -1853,6 +1853,10 @@
 }
 
    function SendMail() {
+           var button =  document.getElementById("form-button");
+           button.innerHTML= "Submitting";
+           button.disabled = true;
+           button.style.background= '#000000';
 
             var theDivload =  document.getElementById("load");
             theDivload.style.display= "block";
@@ -1927,6 +1931,12 @@
                     // console.log(response.data.status) 
                     if (response.data.status==200){
                            contactform.reset()
+                           
+                           var button =  document.getElementById("form-button");
+                          button.innerHTML= "Submitted";
+                           button.disabled = true;
+                          button.style.background= "#000000";
+
 
                            var theDivload =  document.getElementById("load");
                            theDivload.style.display= "none";
@@ -1951,6 +1961,14 @@
                       var load =  document.getElementById("load");
                       load.style.display= "none";
 
+                      var button =  document.getElementById("form-button");
+                          button.innerHTML= "Failed !!";
+                           button.disabled = false;
+                          button.style.background= '#000000';
+
+
+                      
+
                       var theDiv =  document.getElementById("notok");
                       theDiv.style.display= "block";
                       theDiv.innerHTML = 'Request Submitted Unsuccesfully.  If Intrested visit <a style="color:black;"href="https://www.rstiwari.com/contact"> Website Contact</a>';
@@ -1965,6 +1983,13 @@
 
          else
          {
+          
+          
+          var button =  document.getElementById("form-button");
+          button.innerHTML= "Try Again";
+          button.disabled = false;
+          button.style.background= '#18d26e';
+
 
           var load =  document.getElementById("load");
           load.style.display= "none";

@@ -16,6 +16,9 @@ body {
   background: transparent;
 }
 
+.text_formatted {
+  text-align: justify;
+}
 body::before {
   content: "";
   position: fixed;
