@@ -8,7 +8,7 @@
   <title>Ravi Shekhar Tiwari </title>
    <link rel="canonical" href="https://www.rstiwari.com" />
   <meta content="Portfolio of Ravi Shekhar Tiwari. An AI Engineer, Researcher as well as Innovator.I likes to innovate things for the betterment of the human. " name="description">
-  <meta content=" Artificial Intelligence RS Tiwari R.S. Tiwari Ravi Shekhar Tiwari Technology apis India reviewerInformation Technology research  RSTiwari Journal Developer A.I Data Analytics Freelancer ETL Poet Reviewer Author Writter Developer ML Engineer AI Engineer Dr.P.Supraja p supraja Streamlit app streamlit app about RS Tiwari about Ravi Shekhar Tiwari Supraja Dr.A.Helen Victoria drsupraja  Machine Learning Data Scientist Awards Research Patents Freelancing Projects Researcher Ravi Shekhar Tiwari RSTiwari Gait Resume Portfolio Learner" name="keywords">
+  <meta content=" Artificial Intelligence streamlit journal reviewer app RS Tiwari reviewer streamlit projects intelligence journal india developed R.S. Tiwari Ravi Shekhar Tiwari Technology apis India reviewerInformation Technology research  RSTiwari Journal Developer A.I Data Analytics Freelancer ETL Poet Reviewer Author Writter Developer ML Engineer AI Engineer Dr.P.Supraja p supraja Streamlit app streamlit app about RS Tiwari about Ravi Shekhar Tiwari Supraja Dr.A.Helen Victoria drsupraja  Machine Learning Data Scientist Awards Research Patents apis  Books books Published published artificial intelligence p supraja ai engineer Freelancing Projects Researcher Ravi Shekhar Tiwari RSTiwari Gait Resume Portfolio Learner" name="keywords">
   <meta content=" Ravi Shekhar Tiwari " name="author">
   <link rel="alternate" href="https://portfolio.rstiwari.com/" hreflang="en-us" />
   <link rel="alternate" href="https://www.rstiwari.com/" hreflang="en-us" />
@@ -49,7 +49,7 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="www.rstiwari.com">Ravi Shekhar Tiwari </a></h1>
+      <h1><a href="https://www.rstiwari.com" target="_blank">Ravi Shekhar Tiwari </a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       <h2>I'm a passionate <span>AI Engineer</span> from India </h2>
@@ -1861,7 +1861,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/main_api_calls.js"></script>
 
 
   <!--- Axios CDn Import   -->
@@ -1874,234 +1874,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" crossorigin="anonymous"
            referrerpolicy="no-referrer"></script>
-
-
-   <!--- Function for sendimg mails   -->
-   <script>
-
-
-  function isNotEmpty(value)
-                      {
-                        if (value == null || typeof value == 'undefined' ) return false;
-                            return (value.length > 0);
-                      }
-
-
-  function isEmail(email)
-                      {
-                    let regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-                    return regex.test(String(email).toLowerCase());
-}
-
-   function SendMail() {
-           var button =  document.getElementById("form-button");
-           button.innerHTML= "Submitting";
-           button.disabled = true;
-           button.style.background= '#000000';
-
-            var theDivload =  document.getElementById("load");
-            theDivload.style.display= "block";
-
-            var theDiv1 =  document.getElementById("notok");
-            theDiv1.style.display= "none";
-
-            var theDiv2 =  document.getElementById("ok");
-            theDiv2.style.display= "none";
-
-
-
-
-
-
-          let name = document.getElementById("name").value
-          let check_name= isNotEmpty(name)
-
-          let email = document.getElementById("email").value
-          let check_email= isEmail(email)
-
-
-          let subject = document.getElementById("subject").value
-          let check_subject= isNotEmpty(subject)
-
-
-          let message=document.getElementById("message").value
-          let check_message= isNotEmpty(message)
-
-          let contactform=document.getElementById('contact-form')
-          let contactformmessage=document.getElementById("contactformmessage")
-
-
-          if ( check_name && check_email  && check_subject && check_message )
-
-          {
-
-              // console.log("start")
-              // console.log(name)
-              // console.log(check_email)
-              // console.log(subject)
-              // console.log(message)
-              // console.log("end")
-
-
-
-
-
-              let headersList = {
-                                 "Accept": "*/*",
-                                "Authorization": "Token 78edb129dc27b9928759f79565d875391cb55f3b",
-                                "Content-Type": "application/json"
-                                }
-
-              let bodyContent = JSON.stringify({
-                                                "user_name":name,
-                                                "user_email":email,
-                                                "user_subject":subject,
-                                                "user_message":message
-                                              });
-
-              let reqOptions = {
-                                url: "https://contactformapiwix.herokuapp.com/sendmail/",
-                                method: "POST",
-                                headers: headersList,
-                                data: bodyContent,
-                              }
-
-
-             axios.request(reqOptions)
-              .then(response => {
-                    // console.log(response.data.status)
-                    if (response.data.status==200){
-                           contactform.reset()
-
-                           var button =  document.getElementById("form-button");
-                          button.innerHTML= "Submitted";
-                           button.disabled = true;
-                          button.style.background= "#000000";
-
-
-                           var theDivload =  document.getElementById("load");
-                           theDivload.style.display= "none";
-
-                           var theDiv =  document.getElementById("ok");
-                           theDiv.style.display= "block";
-                           theDiv.innerHTML = 'Request Submitted Succesfully. If Intrested Please visit <a style="color:black;"href="https://www.rstiwari.com"> Profile</a>';
-
-                           //location.href = "https://www.rstiwari.com/contact";
-                          //  var delayInMilliseconds = 6000;
-                          //  setTimeout(function() {
-                          //                       theDiv.innerHTML += '';
-                          //                       theDiv.style.display= "none";
-                          //                       }, delayInMilliseconds);
-
-
-
-
-                    }
-                    else
-                    {
-                      var load =  document.getElementById("load");
-                      load.style.display= "none";
-
-                      var button =  document.getElementById("form-button");
-                          button.innerHTML= "Failed !!";
-                           button.disabled = false;
-                          button.style.background= '#000000';
-
-
-
-
-                      var theDiv =  document.getElementById("notok");
-                      theDiv.style.display= "block";
-                      theDiv.innerHTML = 'Request Submitted Unsuccesfully.  If Intrested visit <a style="color:black;"href="https://www.rstiwari.com/contact"> Website Contact</a>';
-                      //location.href = "https://www.rstiwari.com/contact";
-                    }
-
-                }
-
-            )
-
-          }
-
-         else
-         {
-
-
-          var button =  document.getElementById("form-button");
-          button.innerHTML= "Try Again";
-          button.disabled = false;
-          button.style.background= '#000000';
-
-
-          var load =  document.getElementById("load");
-          load.style.display= "none";
-          var theDiv =  document.getElementById("notok");
-          theDiv.style.display= "block";
-
-          if (!check_email)
-          {
-          theDiv.innerHTML = 'OOPs!!! Invalid Email ';
-//           var delayInMilliseconds = 10000;
-//                            setTimeout(function() {
-//                                                 theDiv.innerHTML = '';
-//                                                 theDiv.style.display= "none";
-//                                                 }, delayInMilliseconds);
-
-
-          }
-
-          else if (!check_name)
-          {
-          theDiv.innerHTML = 'OOPs!!! Name is empty ';
-//           var delayInMilliseconds = 6000;
-//                            setTimeout(function() {
-//                                                 theDiv.innerHTML = '';
-//                                                 theDiv.style.display= "none";
-//                                                 }, delayInMilliseconds);
-
-
-          }
-
-          else if (!check_subject)
-          {
-          theDiv.innerHTML = 'OOPs!!! Subject is empty ';
-          // var delayInMilliseconds = 6000;
-          //                  setTimeout(function() {
-          //                                       theDiv.innerHTML = '';
-          //                                       theDiv.style.display= "none";
-          //                                       }, delayInMilliseconds);
-
-          }
-
-          else if (!check_message)
-          {
-          theDiv.innerHTML = 'OOPs!!! Message is empty ';
-          // var delayInMilliseconds = 6000;
-          //                  setTimeout(function() {
-          //                                       theDiv.innerHTML = '';
-          //                                       theDiv.style.display= "none";
-          //                                       }, delayInMilliseconds);
-
-          }
-
-
-
-
-         }
-
-
-
-
-
-   }
-
-   </script>
-
-
-
-
-
-
-
 
 
 
