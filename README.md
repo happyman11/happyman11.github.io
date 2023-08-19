@@ -1,9 +1,9 @@
 # happyman11.github.io
 
-## My Portfolio which is availoable at    <a href="https://portfolio.rstiwari.com">
+<h1>My Portfolio which is available at    <a href="https://portfolio.rstiwari.com">
     <img src="https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white" alt="
 GitPages Badge"/>
-  </a>
+  </a></h1>
 
 <div id="header" align="center">
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
