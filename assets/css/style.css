@@ -31,7 +31,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url(".././img/6zjx.gif") top right no-repeat;
+  background: #040404 url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTJwMzR3bGF0b2Rqd2Fmejk5NXhtdGs4a29oYnV2dXR4OWVnNDNoayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/BHNfhgU63qrks/giphy.gif") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
