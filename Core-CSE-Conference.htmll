@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Ravi Shekhar Tiwari </title>
+  <link rel="canonical" href="https://www.rstiwari.com/" />
+   <link rel="canonical" href="https://portfolio.rstiwari.com/" />
+  <meta content="Portfolio of Ravi Shekhar Tiwari. An AI Engineer, Researcher as well as Innovator.I likes to innovate things for the betterment of the human. " name="description">
+  <meta content="AI Blockchain Bussuiness Intelligence Researcher research blog Artificial Intelligence streamlit journal reviewer app RS Tiwari reviewer streamlit projects intelligence journal india developed R.S. Tiwari Ravi Shekhar Tiwari Technology apis India reviewerInformation Technology research  RSTiwari Journal Developer A.I Data Analytics Freelancer ETL Poet Reviewer Author Writter Developer ML Engineer AI Engineer Dr.P.Supraja p supraja Streamlit app streamlit app about RS Tiwari about Ravi Shekhar Tiwari Supraja Dr.A.Helen Victoria drsupraja  Machine Learning Data Scientist Awards Research Patents apis  Books books Published published artificial intelligence p supraja ai engineer Freelancing Projects Researcher Ravi Shekhar Tiwari RSTiwari Gait Resume Portfolio Learner" name="keywords">
+  <meta content=" Ravi Shekhar Tiwari reviewer journal  research  artificial research paper" name="author">
+  <meta content=" Ravi Shekhar Tiwari reviewer journal  research  artificial research paper" name="reviewer journal  research blockchain artificial inntelligence research paper">
+  
+  
+  <link rel="alternate" href="https://www.rstiwari.com/" hreflang="en-us" />
+  <!-- <meta http-equiv="refresh" content="30"> -->
+  <!-- Favicons -->
+  <link href="assets/img/img/Logo1.png" rel="icon">
+
+  <link href="assets/img/img/Logo1.png" rel="apple-touch-icon">
+
+    <title>Conference Rankings</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    max-height: 150px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.filter-bar input, .filter-bar select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    flex: 1;
+    margin-right: 1rem;
+    max-width: 100%; /* Allow full width for the search bar on desktop */
+}
+
+.filter-bar select {
+    flex: 0.4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow-x: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-links {
+    margin-top: 0.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer-links i {
+    margin-right: 8px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f4f4f9;
+}
+
+.pagination button.disabled {
+    cursor: not-allowed;
+    background-color: #ddd;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column;
+    }
+
+    .filter-bar input, .filter-bar select {
+        margin-right: 0;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    table {
+        font-size: 14px;
+        overflow-x: auto;
+    }
+
+    .pagination button {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+
+/* marquee */
+.marquee {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        color: black; /* Solid black text */
+        font-size: 18px; /* Font size */
+        font-weight: bold; /* Bold text */
+        padding: 10px 0; /* Vertical padding */
+        font-family: 'Arial', sans-serif; /* Font family */
+        text-transform: uppercase; /* Uppercase letters */
+        letter-spacing: 1.5px; /* Slightly wider letter spacing */
+        background-color: transparent; /* No background */
+    }
+
+    .marquee span {
+        display: inline-block;
+        animation: marquee-animation 10s linear infinite; /* Marquee animation */
+    }
+
+    @keyframes marquee-animation {
+        0% {
+            transform: translateX(100%); /* Start from right */
+        }
+        100% {
+            transform: translateX(-100%); /* Move to left */
+        }
+    }
+/* Optional hover effect */
+.marquee:hover {
+    background-color: white; /* Change background on hover */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+	    
+        <h1><i class="fa fa-cog fa-spin fa-2x fa-fw"></i>Computer Science Conference Rankings</h1>
+		 <div class="footer-links">
+            <a href="https://www.rstiwari.com" target="_blank"><i class="fa fa-link"></i> Website</a> |
+            <a href="https://portfolio.rstiwari.com" target="_blank"><i class="fa fa-globe"></i>Portfolio</a> |
+            <a href="http://www.linkedin.com/in/ravishekhartiwari" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a> |
+            <a href="https://tiwari11-rst.medium.com/" target="_blank"><i class="fa fa-medium"></i> Medium</a>
+        </div>
+    </header>
+	<div class="marquee">
+    <span>Last Updated @ January 2025. Check out the latest rankings <a href="https://portal.core.edu.au/conf-ranks/">here</a></span>
+</div>
+    <div class="container">
+        <div class="filter-bar">
+            <input type="text" id="search" placeholder="Search conferences...">
+            <select id="rankFilter">
+                <option value="all">All Ranks</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+        <table id="conferenceTable">
+            <thead>
+                <tr>
+                    <th>S. No</th>
+                    <th>Abbreviation</th>
+                    <th>Conference Name</th>
+                    <th>Rank</th>
+                </tr>
+            </thead>
+            <tbody id="conferenceTableBody">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+        <div class="pagination">
+    <button id="prevPage" class="disabled" disabled>&laquo; Previous</button>
+    <button id="nextPage">Next &raquo;</button>
+</div>
+    </div>
+    <footer>
+        <p>© 2025 Ravi Shekhar Tiwari. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="https://www.rstiwari.com" target="_blank"><i class="fa fa-link"></i> Website</a> |
+            <a href="https://portfolio.rstiwari.com" target="_blank"><i class="fa fa-globe"></i>Portfolio</a> |
+            <a href="http://www.linkedin.com/in/ravishekhartiwari" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a> |
+            <a href="https://tiwari11-rst.medium.com/" target="_blank"><i class="fa fa-medium"></i> Medium</a>
+        </div>
+    </footer>
+    <script>
+        const conferences = [
+            { acronym: "AAAI", name: "National Conference of the American Association for Artificial Intelligence", rank: "A+" },
+            { acronym: "AAMAS", name: "International Conference on Autonomous Agents and Multiagent Systems", rank: "A+" },
+            { acronym: "ACL", name: "Association of Computational Linguistics", rank: "A+" },
+            { acronym: "ACMMM", name: "ACM Multimedia Conference", rank: "A+" },
+            { acronym: "ASPLOS", name: "Architectural Support for Programming Languages and Operating Systems", rank: "A+" },
+            { acronym: "CAV", name: "Computer Aided Verification", rank: "A+" },
+            { acronym: "CCS", name: "ACM Conference on Computer and Communications Security", rank: "A+" },
+            { acronym: "CHI", name: "International Conference on Human Factors in Computing Systems", rank: "A+" },
+            { acronym: "COLT", name: "Annual Conference on Computational Learning Theory", rank: "A+" },
+            { acronym: "CRYPTO", name: "Advances in Cryptology", rank: "A+" },
+            { acronym: "CSCL", name: "Computer Supported Collaborative Learning", rank: "B" },
+            { acronym: "DCC", name: "IEEE Data Compression Conference", rank: "A+" },
+            { acronym: "DSN", name: "International Conference on Dependable Systems", rank: "A" },
+            { acronym: "EuroCrypt", name: "International Conference on the Theory and Application of Cryptographic Techniques", rank: "A+" },
+            { acronym: "FOCS", name: "IEEE Symposium on Foundations of Computer Science", rank: "A+" },
+            { acronym: "FOGA", name: "Foundations of Genetic Algorithms", rank: "A" },
+            { acronym: "HPCA", name: "IEEE Symposium on High Performance Computer Architecture", rank: "A+" },
+            { acronym: "I3DG", name: "ACM-SIGRAPH Interactive 3D Graphics", rank: "B" },
+            { acronym: "ICAPS", name: "International Conference on Automated Planning and Scheduling", rank: "A+" },
+            { acronym: "ICCV", name: "IEEE International Conference on Computer Vision", rank: "A+" },
+            { acronym: "ICDE", name: "IEEE International Conference on Data Engineering", rank: "A+" },
+            { acronym: "ICDM", name: "IEEE International Conference on Data Mining", rank: "A+" },
+            { acronym: "ICFP", name: "International Conference on Functional Programming", rank: "A" },
+            { acronym: "ICIS", name: "International Conference on Information Systems", rank: "A" },
+            { acronym: "ICML", name: "International Conference on Machine Learning", rank: "A+" },
+            { acronym: "ICSE", name: "International Conference on Software Engineering", rank: "A+" },
+            { acronym: "IJCAI", name: "International Joint Conference on Artificial Intelligence", rank: "A+" },
+            { acronym: "IJCAR", name: "International Joint Conference on Automated Reasoning", rank: "A" },
+            { acronym: "INFOCOM", name: "Joint Conference of the IEEE Computer and Communications Societies", rank: "A+" },
+            { acronym: "InfoVis", name: "IEEE Information Visualization Conference", rank: "A+" },
+            { acronym: "IPSN", name: "Information Processing in Sensor Networks", rank: "A+" },
+            { acronym: "ISCA", name: "ACM International Symposium on Computer Architecture", rank: "A+" },
+            { acronym: "ISMAR", name: "IEEE and ACM International Symposium on Mixed and Augmented Reality", rank: "A+" },
+            { acronym: "ISSAC", name: "International Symposium on Symbolic and Algebraic Computation", rank: "A+" },
+            { acronym: "ISWC", name: "IEEE International Symposium on Wearable Computing", rank: "A+" },
+            { acronym: "IWQoS", name: "IFIP International Workshop on QoS", rank: "A+" },
+            { acronym: "JCDL", name: "ACM Conference on Digital Libraries", rank: "A+" },
+            { acronym: "KR", name: "International Conference on Principles of KR & Reasoning", rank: "A+" },
+            { acronym: "LICS", name: "IEEE Symposium on Logic in Computer Science", rank: "A+" },
+            { acronym: "MOBICOM", name: "ACM International Conference on Mobile Computing and Networking", rank: "A+" },
+            { acronym: "NIPS", name: "Advances in Neural Information Processing Systems", rank: "A+" },
+            { acronym: "OOPSLA", name: "ACM Conference on Object Oriented Programming Systems Languages and Applications", rank: "A" },
+            { acronym: "OSDI", name: "Usenix Symposium on Operating Systems Design and Implementation", rank: "A+" },
+            { acronym: "PERCOM", name: "IEEE International Conference on Pervasive Computing and Communications", rank: "A+" },
+            { acronym: "PERVASIVE", name: "International Conference on Pervasive Computing", rank: "A+" },
+            { acronym: "PLDI", name: "ACM-SIGPLAN Conference on Programming Language Design & Implementation", rank: "A+" },
+            { acronym: "PODC", name: "ACM Symposium on Principles of Distributed Computing", rank: "A+" },
+            { acronym: "PODS", name: "ACM SIGMOD-SIGACT-SIGART Conference on Principles of Database Systems", rank: "A+" },
+            { acronym: "POPL", name: "ACM-SIGACT Symposium on Principles of Programming Languages", rank: "A+" },
+            { acronym: "RSS", name: "Robotics: Systems and Science", rank: "A+" },
+            { acronym: "RTSS", name: "Real Time Systems Symposium", rank: "A+" },
+            { acronym: "SENSYS", name: "ACM Conference on Embedded Networked Sensor Systems", rank: "A+" },
+            { acronym: "SIGCOMM", name: "ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication", rank: "A+" },
+            { acronym: "SIGGRAPH", name: "ACM SIG International Conference on Computer Graphics and Interactive Techniques", rank: "A+" },
+            { acronym: "SIGIR", name: "ACM International Conference on Research and Development in Information Retrieval", rank: "A+" },
+            { acronym: "SIGKDD", name: "ACM International Conference on Knowledge Discovery and Data Mining", rank: "A+" },
+            { acronym: "SIGMETRICS", name: "ACM SIG on computer and communications metrics and performance", rank: "A+" },
+            { acronym: "SIGMOD", name: "ACM Special Interest Group on Management of Data Conference", rank: "A+" },
+            { acronym: "SODA", name: "ACM/SIAM Symposium on Discrete Algorithms", rank: "A+" },
+            { acronym: "SOSP", name: "ACM SIGOPS Symposium on Operating Systems Principles", rank: "A+" },
+            { acronym: "STOC", name: "ACM Symposium on Theory of Computing", rank: "A+" },
+            { acronym: "UAI", name: "Conference in Uncertainty in Artificial Intelligence", rank: "A+" },
+            { acronym: "UbiComp", name: "Ubiquitous Computing", rank: "A+" },
+            { acronym: "VLDB", name: "International Conference on Very Large Databases", rank: "A+" },
+            { acronym: "WWW", name: "International World Wide Web Conference", rank: "A+" },
+			
+        ];
+
+        const conferencesPerPage = 30;
+        let currentPage = 1;
+
+        const searchInput = document.getElementById('search');
+        const rankFilter = document.getElementById('rankFilter');
+        const conferenceTableBody = document.getElementById('conferenceTableBody');
+        const prevPageButton = document.getElementById('prevPage');
+        const nextPageButton = document.getElementById('nextPage');
+
+        const renderTable = () => {
+            const searchValue = searchInput.value.toLowerCase();
+            const rankValue = rankFilter.value;
+
+            const filteredConferences = conferences.filter((conference) => {
+                const matchesSearch = conference.name.toLowerCase().includes(searchValue) || conference.acronym.toLowerCase().includes(searchValue);
+                const matchesRank = rankValue === 'all' || conference.rank === rankValue;
+                return matchesSearch && matchesRank;
+            });
+
+            const startIndex = (currentPage - 1) * conferencesPerPage;
+            const endIndex = Math.min(startIndex + conferencesPerPage, filteredConferences.length);
+            const paginatedConferences = filteredConferences.slice(startIndex, endIndex);
+
+            conferenceTableBody.innerHTML = '';
+            paginatedConferences.forEach((conference, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${startIndex + index + 1}</td>
+                    <td>${conference.acronym}</td>
+                    <td>${conference.name}</td>
+                    <td>${conference.rank}</td>
+                `;
+                conferenceTableBody.appendChild(row);
+            });
+
+            prevPageButton.classList.toggle('disabled', currentPage === 1);
+            nextPageButton.classList.toggle('disabled', currentPage * conferencesPerPage >= filteredConferences.length);
+        };
+
+        searchInput.addEventListener('input', () => {
+            currentPage = 1;
+            renderTable();
+        });
+
+        rankFilter.addEventListener('change', () => {
+            currentPage = 1;
+            renderTable();
+        });
+
+        prevPageButton.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderTable();
+            }
+        });
+
+        nextPageButton.addEventListener('click', () => {
+            currentPage++;
+            renderTable();
+        });
+
+        renderTable();
+    </script>
+</body>
+</html>
