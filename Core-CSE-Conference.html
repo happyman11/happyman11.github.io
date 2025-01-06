@@ -166,37 +166,36 @@ footer {
 
 
 /* marquee */
+/* marquee container */
 .marquee {
-        width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        display: inline-block;
-        color: black; /* Solid black text */
-        font-size: 18px; /* Font size */
-        font-weight: bold; /* Bold text */
-        padding: 10px 0; /* Vertical padding */
-        font-family: 'Arial', sans-serif; /* Font family */
-        text-transform: uppercase; /* Uppercase letters */
-        letter-spacing: 1.5px; /* Slightly wider letter spacing */
-        background-color: transparent; /* No background */
-    }
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    color: black; /* Solid black text */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 10px 0; /* Vertical padding */
+    font-family: 'Arial', sans-serif; /* Font family */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1.5px; /* Slightly wider letter spacing */
+    background-color: transparent; /* No background */
+    animation: marquee 10s linear infinite;
+}
 
-    .marquee span {
-        display: inline-block;
-        animation: marquee-animation 10s linear infinite; /* Marquee animation */
+/* marquee animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%); /* Start from right */
     }
+    100% {
+        transform: translateX(-100%); /* Move to left */
+    }
+}
 
-    @keyframes marquee-animation {
-        0% {
-            transform: translateX(100%); /* Start from right */
-        }
-        100% {
-            transform: translateX(-100%); /* Move to left */
-        }
-    }
 /* Optional hover effect */
 .marquee:hover {
-    background-color: white; /* Change background on hover */
+    animation-play-state: paused; /* Pause animation on hover */
     cursor: pointer; /* Change cursor on hover */
 }
 
