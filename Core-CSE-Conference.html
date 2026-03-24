@@ -1170,58 +1170,77 @@ footer {
         const nextPageButton = document.getElementById('nextPage');
 
         const renderTable = () => {
-            const searchValue = searchInput.value.toLowerCase();
-            const rankValue = rankFilter.value;
+    const searchValue = searchInput.value.toLowerCase();
+    const rankValue = rankFilter.value;
 
-            const filteredConferences = conferences.filter((conference) => {
-                const matchesSearch = conference.name.toLowerCase().includes(searchValue) || conference.acronym.toLowerCase().includes(searchValue);
-                const matchesRank = rankValue === 'all' || conference.rank === rankValue;
-                return matchesSearch && matchesRank;
-            });
+    const filteredConferences = conferences.filter((conference) => {
+        const matchesSearch = conference.name.toLowerCase().includes(searchValue) || conference.acronym.toLowerCase().includes(searchValue);
+        const matchesRank = rankValue === 'all' || conference.rank === rankValue;
+        return matchesSearch && matchesRank;
+    });
 
-            const startIndex = (currentPage - 1) * conferencesPerPage;
-            const endIndex = Math.min(startIndex + conferencesPerPage, filteredConferences.length);
-            const paginatedConferences = filteredConferences.slice(startIndex, endIndex);
+    const totalPages = Math.ceil(filteredConferences.length / conferencesPerPage);
+    const startIndex = (currentPage - 1) * conferencesPerPage;
+    const endIndex = Math.min(startIndex + conferencesPerPage, filteredConferences.length);
+    const paginatedConferences = filteredConferences.slice(startIndex, endIndex);
 
-            conferenceTableBody.innerHTML = '';
-            paginatedConferences.forEach((conference, index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${startIndex + index + 1}</td>
-                    <td>${conference.acronym}</td>
-                    <td>${conference.name}</td>
-                    <td>${conference.rank}</td>
-                `;
-                conferenceTableBody.appendChild(row);
-            });
+    conferenceTableBody.innerHTML = '';
+    paginatedConferences.forEach((conference, index) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>${startIndex + index + 1}</td>
+            <td>${conference.acronym}</td>
+            <td>${conference.name}</td>
+            <td>${conference.rank}</td>
+        `;
+        conferenceTableBody.appendChild(row);
+    });
 
-            prevPageButton.classList.toggle('disabled', currentPage === 1);
-            nextPageButton.classList.toggle('disabled', currentPage * conferencesPerPage >= filteredConferences.length);
-        };
+    // Fix: toggle both the class AND the disabled attribute
+    if (currentPage <= 1) {
+        prevPageButton.classList.add('disabled');
+        prevPageButton.setAttribute('disabled', true);
+    } else {
+        prevPageButton.classList.remove('disabled');
+        prevPageButton.removeAttribute('disabled');
+    }
 
-        searchInput.addEventListener('input', () => {
-            currentPage = 1;
-            renderTable();
-        });
+    if (currentPage >= totalPages) {
+        nextPageButton.classList.add('disabled');
+        nextPageButton.setAttribute('disabled', true);
+    } else {
+        nextPageButton.classList.remove('disabled');
+        nextPageButton.removeAttribute('disabled');
+    }
+};
 
-        rankFilter.addEventListener('change', () => {
-            currentPage = 1;
-            renderTable();
-        });
-
-        prevPageButton.addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                renderTable();
-            }
-        });
-
-        nextPageButton.addEventListener('click', () => {
-            currentPage++;
-            renderTable();
-        });
-
+prevPageButton.addEventListener('click', () => {
+    if (currentPage > 1) {
+        currentPage--;
         renderTable();
+    }
+});
+
+nextPageButton.addEventListener('click', () => {
+    const filteredCount = conferences.filter((conference) => {
+        const searchValue = searchInput.value.toLowerCase();
+        const rankValue = rankFilter.value;
+        const matchesSearch = conference.name.toLowerCase().includes(searchValue) || conference.acronym.toLowerCase().includes(searchValue);
+        const matchesRank = rankValue === 'all' || conference.rank === rankValue;
+        return matchesSearch && matchesRank;
+    }).length;
+
+    const totalPages = Math.ceil(filteredCount / conferencesPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        renderTable();
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+            currentPage = 1;
+            renderTable();
+        });
     </script>
 </body>
 </html>
