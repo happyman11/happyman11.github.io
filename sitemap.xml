@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <url>
+    <loc>https://portfolio.rstiwari.com/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://portfolio.rstiwari.com/assets/img/img/myimg.jpeg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://portfolio.rstiwari.com/assets/img/og/og-home.jpg</image:loc>
+    </image:image>
+  </url>
 
-<url>
-  <loc>https://portfolio.rstiwari.com/</loc>
-  <lastmod>2022-09-10T04:18:40+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-      <url>
-  <loc>https://portfolio.rstiwari.com/Core-CSE-Conference</loc>
-  <lastmod>2022-09-10T04:18:40+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://portfolio.rstiwari.com/foodorder.github.io/</loc>
-  <lastmod>2021-03-27T14:16:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.rstiwari.com</loc>
-  <lastmod>2021-03-27T14:16:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://portfolio.rstiwari.com/Core-CSE-Conference.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://portfolio.rstiwari.com/assets/img/og/og-rankings.jpg</image:loc>
+    </image:image>
+  </url>
 
+  <url>
+    <loc>https://portfolio.rstiwari.com/foodorder.github.io/</loc>
+    <lastmod>2021-03-27</lastmod>
+    <priority>0.4</priority>
+  </url>
 
 </urlset>
