@@ -1770,6 +1770,103 @@ a.stat:hover .ext { opacity: 1; }
   .btn { width: 100%; }
 }
 
+/* ---------- Readable copy ----------
+   All running text (paragraphs, bullet points, card descriptions, section intros) shares one
+   larger size and is justified, with hyphenation so even edges don't open wide gaps. */
+:root { --fs-copy: 1.125rem; --lh-copy: 1.75; }
+@media (max-width: 640px) { :root { --fs-copy: 1.0625rem; } }
+
+.section-lede,
+.prose p,
+.research-card p,
+.tl-card li,
+.tl-card p.desc,
+.edu-card p.desc,
+.service p,
+.writing-card p,
+.resource p,
+.mentor blockquote {
+  font-size: var(--fs-copy);
+  line-height: var(--lh-copy);
+}
+.hero-thesis {
+  font-size: clamp(1.125rem, 1.6vw, 1.3rem);
+  line-height: var(--lh-copy);
+}
+.hero-thesis,
+.section-lede,
+.prose p,
+.research-card p,
+.tl-card li,
+.tl-card p.desc,
+.edu-card p.desc,
+.service p,
+.writing-card p,
+.resource p,
+.mentor blockquote,
+.kind-note blockquote {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+/* centred contexts stay centred */
+.section-head.center .section-lede,
+.contact-card .section-lede { text-align: center; -webkit-hyphens: manual; hyphens: manual; }
+
+/* secondary text scales up with the copy */
+.tl-card h3 { font-size: 1.25rem; }
+.tl-org { font-size: 1.125rem; }
+.research-card h3 { font-size: 1.5rem; }
+.service h3 { font-size: 1.25rem; }
+.project-body h3 { font-size: 1.125rem; }
+.project-body p { font-size: 0.95rem; }
+.edu-school { font-size: 1rem; }
+.mentor-title { font-size: 0.95rem; }
+.mentor-meta { font-size: 0.9rem; }
+.skill-group h3 { font-size: 1.05rem; }
+.chips li { font-size: 0.9rem; }
+.stat-label { font-size: 0.95rem; }
+.interest { font-size: 0.95rem; }
+.facts .value { font-size: 1.05rem; }
+.rank-table { font-size: 1rem; }
+
+/* Justified text needs a comfortable measure, so paragraph-heavy cards get wider columns */
+@media (min-width: 900px) {
+  #research .grid-3,
+  #services .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 899px) {
+  #research .grid-3,
+  #services .grid-3 { grid-template-columns: 1fr; }
+}
+@media (min-width: 901px) {
+  .edu-card { grid-column: span 3; }
+  .edu-card.current { grid-column: span 6; }
+  .edu-card.current .desc { max-width: 72ch; }
+}
+@media (max-width: 900px) {
+  .edu-card,
+  .edu-card.minor,
+  .edu-card.current { grid-column: span 6; }
+}
+
+/* 11 skill groups: let the last card fill the row instead of leaving a gap */
+@media (min-width: 1025px) {
+  .skills-grid > :last-child:nth-child(3n + 2) { grid-column: span 2; }
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+  .skills-grid > :last-child:nth-child(odd) { grid-column: span 2; }
+}
+
+/* the rotating phrase can wrap to two lines on phones: reserve both so nothing below shifts */
+@media (max-width: 640px) { .hero-typed { min-height: 3.3em; } }
+
+/* very narrow columns read better ragged than stretched */
+@media (max-width: 400px) {
+  .tl-card li, .tl-card p.desc, .research-card p, .service p { text-align: left; }
+}
+
 /* ---------- Adaptive: very small, landscape, large and touch screens ---------- */
 /* Fold-style and 320px phones */
 @media (max-width: 359px) {

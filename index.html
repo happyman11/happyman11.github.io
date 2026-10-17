@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Ravi Shekhar Tiwari — Neurosymbolic AI Researcher, IIIT-Delhi</title>
   <meta name="description" content="Ravi Shekhar Tiwari, PhD scholar at IIIT-Delhi researching Neurosymbolic AI, LLM verification and explainable AI. AI engineer, book editor and reviewer.">
-  <meta name="keywords" content="Ravi Shekhar Tiwari, RS Tiwari, RSTiwari, IIIT Delhi, PhD, Neurosymbolic AI, LLM Verification, Model Checking, Ontology, Explainable AI, XAI, AI Engineer, Machine Learning, Researcher, Journal Reviewer, Book Editor, Patents">
+  <meta name="keywords" content="Ravi Shekhar Tiwari, RS Tiwari, RSTiwari, IIIT Delhi, PhD, Neurosymbolic AI, LLM Verification, Formal Methods, SMT, Z3, LLM Inference, NVIDIA Triton, Model Checking, Ontology, Explainable AI, XAI, AI Engineer, Machine Learning, Researcher, Journal Reviewer, Book Editor, Patents">
   <meta name="author" content="Ravi Shekhar Tiwari">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="color-scheme" content="dark light">
@@ -110,7 +110,7 @@
           { "@type": "CollegeOrUniversity", "name": "Mahindra University" },
           { "@type": "CollegeOrUniversity", "name": "SRM Institute of Science and Technology" }
         ],
-        "knowsAbout": ["Neurosymbolic AI", "LLM verification", "Model checking", "Ontology", "Knowledge graphs", "Explainable AI", "Machine learning", "Deep learning", "Edge AI"],
+        "knowsAbout": ["Neurosymbolic AI", "LLM verification", "Formal methods", "SMT solvers", "Z3 theorem prover", "LLM inference", "NVIDIA Triton Inference Server", "Model checking", "Ontology", "Knowledge graphs", "Explainable AI", "Machine learning", "Deep learning", "Edge AI"],
         "email": "mailto:contact@rstiwari.com",
         "address": { "@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN" },
         "sameAs": [
@@ -200,6 +200,8 @@
     <symbol id="twitter-x" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></symbol>
     <symbol id="vector-pen" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.646.646a.5.5 0 0 1 .708 0l4 4a.5.5 0 0 1 0 .708l-1.902 1.902-.829 3.313a1.5 1.5 0 0 1-1.024 1.073L1.254 14.746 4.358 4.4A1.5 1.5 0 0 1 5.43 3.377l3.313-.828zm-1.8 2.908-3.173.793a.5.5 0 0 0-.358.342l-2.57 8.565 8.567-2.57a.5.5 0 0 0 .34-.357l.794-3.174-3.6-3.6z"/><path fill-rule="evenodd" d="M2.832 13.228 8 9a1 1 0 1 0-1-1l-4.228 5.168-.026.086z"/></symbol>
     <symbol id="x-lg" viewBox="0 0 16 16"><path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/></symbol>
+    <symbol id="gpu-card" viewBox="0 0 16 16"><path d="M4 8a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0m7.5-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/><path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .5.5V4h13.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H2v2.5a.5.5 0 0 1-1 0V2H.5a.5.5 0 0 1-.5-.5m5.5 4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M9 8a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0"/><path d="M3 12.5h3.5v1a.5.5 0 0 1-.5.5H3.5a.5.5 0 0 1-.5-.5zm4 1v-1h4v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5"/></symbol>
+    <symbol id="patch-check" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0"/><path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z"/></symbol>
   </svg>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -208,7 +210,7 @@
   <!-- ===================== Navigation ===================== -->
   <header class="site-nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top">
+      <a class="brand" href="https://www.rstiwari.com" target="_blank" rel="noopener" title="Visit www.rstiwari.com">
         <span class="brand-mark" aria-hidden="true">RST</span>
         <span class="brand-name">Ravi Shekhar Tiwari</span>
       </a>
@@ -253,8 +255,8 @@
             I also engineer AI that ships, from edge devices to production pipelines.
           </p>
           <p class="hero-typed">
-            <span class="sr-only">Areas of work: neurosymbolic AI, LLM verification, explainable AI, ontologies and knowledge graphs, edge AI systems, and poetry.</span>
-            <span aria-hidden="true">Currently exploring&nbsp;<span class="typed" data-typed='["neurosymbolic AI","LLM verification","explainable AI","ontologies & knowledge graphs","edge AI systems","a new poem"]'>neurosymbolic AI</span><span class="caret"></span></span>
+            <span class="sr-only">Areas of work: neurosymbolic AI, LLM verification, formal methods with SMT solvers such as Z3, LLM inference on NVIDIA Triton, explainable AI, ontologies and knowledge graphs, edge AI systems, and poetry.</span>
+            <span aria-hidden="true">Currently exploring&nbsp;<span class="typed" data-typed='["neurosymbolic AI","LLM verification","SMT solving with Z3","LLM inference on NVIDIA Triton","explainable AI","ontologies & knowledge graphs","edge AI systems","a new poem"]'>neurosymbolic AI</span><span class="caret"></span></span>
           </p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#projects">View my work <svg class="bi bi-arrow-right" aria-hidden="true" focusable="false"><use href="#arrow-right"></use></svg></a>
@@ -298,7 +300,8 @@
             <p>
               I am a PhD scholar in Computer Science at the <strong>Indraprastha Institute of Information Technology, Delhi</strong>,
               working on Neurosymbolic AI: combining the pattern-finding power of deep learning with the rigour of symbolic reasoning.
-              My work covers ontologies, model checking and the verification of large language models.
+              My work covers formal methods (SMT solving with Z3 and model checking), ontologies and the verification of large language models,
+              along with efficient LLM inference on NVIDIA Triton.
             </p>
             <p>
               Before the PhD I spent several years building production AI. At Chadura Tech I built AI pipelines, chatbots and recommendation systems.
@@ -364,8 +367,8 @@
           <article class="card research-card" data-reveal data-spotlight>
             <span class="icon-orb alt"><svg class="bi bi-shield-check" aria-hidden="true" focusable="false"><use href="#shield-check"></use></svg></span>
             <h3>LLM Verification &amp; Model Checking</h3>
-            <p>Using formal methods and model checking to test whether large language models behave as intended, towards AI that people can trust.</p>
-            <ul class="tags"><li>Formal methods</li><li>LLMs</li><li>Trustworthy AI</li></ul>
+            <p>Using formal methods, SMT solvers such as Z3 and model checking to test whether large language models behave as intended, towards AI that people can trust.</p>
+            <ul class="tags"><li>Formal methods</li><li>SMT · Z3</li><li>LLMs</li><li>Trustworthy AI</li></ul>
           </article>
           <article class="card research-card" data-reveal data-spotlight>
             <span class="icon-orb alt2"><svg class="bi bi-bounding-box-circles" aria-hidden="true" focusable="false"><use href="#bounding-box-circles"></use></svg></span>
@@ -703,13 +706,13 @@
 
       <div class="marquee" data-reveal>
         <ul class="marquee-track">
-          <li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>scikit-learn</li><li>Neurosymbolic AI</li><li>Ontologies</li>
+          <li>Python</li><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>scikit-learn</li><li>Neurosymbolic AI</li><li>Formal methods</li><li>SMT · Z3</li><li>Ontologies</li>
           <li>FastAPI</li><li>Django REST</li><li>Flask</li><li>Streamlit</li><li>Apache Airflow</li><li>Spark</li><li>Rasa</li>
         </ul>
       </div>
       <div class="marquee reverse" data-reveal>
         <ul class="marquee-track">
-          <li>AWS</li><li>GCP</li><li>PostgreSQL</li><li>Power BI</li><li>Tableau</li><li>Solidity</li><li>IPFS</li>
+          <li>NVIDIA Triton</li><li>LLM inference</li><li>AWS</li><li>GCP</li><li>PostgreSQL</li><li>Power BI</li><li>Tableau</li><li>Solidity</li><li>IPFS</li>
           <li>Hyperledger</li><li>Raspberry Pi</li><li>Arduino</li><li>Selenium</li><li>UiPath RPA</li><li>Git</li><li>Jenkins</li>
         </ul>
       </div>
@@ -719,6 +722,14 @@
           <article class="card skill-group" data-reveal data-spotlight>
             <header><svg class="bi bi-cpu" aria-hidden="true" focusable="false"><use href="#cpu"></use></svg><h3>AI &amp; Machine Learning</h3></header>
             <ul class="chips"><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>scikit-learn</li><li>SciPy</li><li>Neurosymbolic AI</li><li>Ontologies</li><li>Rasa</li><li>KNIME</li></ul>
+          </article>
+          <article class="card skill-group" data-reveal data-spotlight>
+            <header><svg class="bi bi-patch-check" aria-hidden="true" focusable="false"><use href="#patch-check"></use></svg><h3>Formal Methods &amp; Verification</h3></header>
+            <ul class="chips"><li>Formal methods</li><li>SMT solvers</li><li>Z3</li><li>Model checking</li><li>LLM verification</li></ul>
+          </article>
+          <article class="card skill-group" data-reveal data-spotlight>
+            <header><svg class="bi bi-gpu-card" aria-hidden="true" focusable="false"><use href="#gpu-card"></use></svg><h3>LLM Inference &amp; Serving</h3></header>
+            <ul class="chips"><li>LLM inference</li><li>NVIDIA Triton Inference Server</li><li>Model serving</li></ul>
           </article>
           <article class="card skill-group" data-reveal data-spotlight>
             <header><svg class="bi bi-code-slash" aria-hidden="true" focusable="false"><use href="#code-slash"></use></svg><h3>Programming Languages</h3></header>
@@ -1113,7 +1124,7 @@
   <!-- ===================== Footer ===================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <a class="brand" href="#top">
+      <a class="brand" href="https://www.rstiwari.com" target="_blank" rel="noopener" title="Visit www.rstiwari.com">
         <span class="brand-mark" aria-hidden="true">RST</span>
         <span class="brand-name">Ravi Shekhar Tiwari</span>
       </a>
